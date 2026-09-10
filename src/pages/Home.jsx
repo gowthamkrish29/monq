@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Leaf, Flame, Heart, Droplets } from 'lucide-react';
+import HomeFeatures from '../components/HomeFeatures';
 import './Home.css';
 
 const Home = () => {
@@ -16,18 +17,6 @@ const Home = () => {
                     <div className="hero-cta">
                         <Link to="/shop" className="btn-primary">Shop Products</Link>
                         <Link to="/investors" className="btn-outline">Investor Deck</Link>
-                    </div>
-                </div>
-            </section>
-
-            {/* Section 1: The Problem (Hook) */}
-            <section className="problem-section">
-                <div className="container">
-                    <div className="problem-content">
-                        <h2>The world doesn't want less flavor. <br /> It wants less sugar.</h2>
-                        <p>
-                            Traditional sugar is deeply embedded in the foods we crave most—from morning coffee and protein shakes to evening desserts. But consumers shouldn't have to choose between their health and their favorite foods. MONQ bridges the gap by redesigning classic formulations without the sugar spike.
-                        </p>
                     </div>
                 </div>
             </section>
@@ -72,6 +61,22 @@ const Home = () => {
                     </div>
                 </div>
             </section>
+
+            {/* Imported HomeFeatures Component */}
+            <HomeFeatures />
+
+            {/* Section 1: The Problem (Hook) */}
+            <section className="problem-section">
+                <div className="container">
+                    <div className="problem-content">
+                        <h2>The world doesn't want less flavor. <br /> It wants less sugar.</h2>
+                        <p>
+                            Traditional sugar is deeply embedded in the foods we crave most—from morning coffee and protein shakes to evening desserts. But consumers shouldn't have to choose between their health and their favorite foods. MONQ bridges the gap by redesigning classic formulations without the sugar spike.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
 
             {/* Section 3: The MONQ Benefits (Icon Grid) */}
             <section className="benefits-section">

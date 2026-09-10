@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-dark: #163828;
+  --color-dark-muted: rgba(22, 56, 40, 0.7);
+  --color-light: #F4F1EA;
+  --color-white: #FFFFFF;
+
+  --font-heading: 'Syne', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
 
 :root {
   /* Colors - STRICT RULE: No Pure Black */
-  --color-dark: #163828;      /* Deep Pine Green */
-  --color-light: #F4F1EA;     /* Oat Milk Cream */
-  --color-white: #FFFFFF;     /* Clean White */
-  
+  --color-dark: #163828;
+  /* Deep Pine Green */
+  --color-light: #F4F1EA;
+  /* Oat Milk Cream */
+  --color-white: #FFFFFF;
+  /* Clean White */
+
   --color-dark-muted: rgba(22, 56, 40, 0.7);
 
   /* Borders & Shadows */
@@ -20,80 +34,92 @@
   --font-body: 'Inter', sans-serif;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+
+
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-heading);
+    font-weight: 700;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  button {
+    font-family: var(--font-body);
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+    transition: all 0.2s ease;
+  }
 }
 
-body {
-  font-family: var(--font-body);
-  background-color: var(--color-light);
-  color: var(--color-dark);
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@layer components {
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-heading);
-  font-weight: 700;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-ul {
-  list-style: none;
-}
-
-button {
-  font-family: var(--font-body);
-  cursor: pointer;
-  border: none;
-  background: none;
-  color: inherit;
-  transition: all 0.2s ease;
-}
-
-/* Global utility classes */
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
-.btn-primary {
-  background-color: var(--color-dark);
-  color: var(--color-light);
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px; /* Pill shape */
-  font-weight: 600;
-}
-
-.btn-primary:hover {
-  background-color: #112d20; /* Slightly darker pine */
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
-}
-
-.btn-outline {
-  border: 2px solid var(--color-dark);
-  color: var(--color-dark);
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  font-weight: 600;
-  background-color: transparent;
-}
-
-.btn-outline:hover {
-  background-color: rgba(22, 56, 40, 0.05);
-  transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
+  /* Global utility classes */
   .container {
-    padding: 0 1rem;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+
+  .btn-primary {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+  }
+
+  .btn-primary:hover {
+    background-color: #112d20;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+  }
+
+  .btn-outline {
+    border: 2px solid var(--color-dark);
+    color: var(--color-dark);
+    padding: 0.75rem 1.5rem;
+    border-radius: 9999px;
+    font-weight: 600;
+    background-color: transparent;
+  }
+
+  .btn-outline:hover {
+    background-color: rgba(22, 56, 40, 0.05);
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 0 1rem;
+    }
   }
 }

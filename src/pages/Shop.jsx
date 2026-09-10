@@ -30,6 +30,11 @@ const Shop = () => {
                 <div className="container">
                     <h1>Shop All Formulations</h1>
                     <p>Discover the future of sweetness without compromise.</p>
+                    <div className="shop-header-badges">
+                        <span className="badge">🌱 Plant-Based</span>
+                        <span className="badge">✨ Zero Calories</span>
+                        <span className="badge">🚫 No Additives</span>
+                    </div>
                 </div>
             </div>
 

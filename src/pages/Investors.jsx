@@ -16,7 +16,7 @@ const Investors = () => {
                 <div className="container">
                     <span className="investors-eyebrow">MONQ INC. S1 DECK</span>
                     <h1>Invest in the Future of Sweetness.</h1>
-                    <p>Disrupting a $140B global sugar market with a scalable, zero-compromise solution powered by Monk Fruit.</p>
+                    <p>Disrupting a ₹11.6 Lakh Crore global sugar market with a scalable, zero-compromise solution powered by Monk Fruit.</p>
                 </div>
             </section>
 
@@ -27,7 +27,7 @@ const Investors = () => {
 
                         <div className="data-card">
                             <h3>Market Opportunity</h3>
-                            <div className="data-stat">$140B</div>
+                            <div className="data-stat">₹11.6L Cr</div>
                             <p>Global sugar market size. Consumers actively shifting towards zero-sugar alternatives due to health risks.</p>
                         </div>
 

@@ -1,0 +1,306 @@
+.whymonq-page {
+    width: 100%;
+}
+
+/* 1. Hero Banner */
+.why-hero {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    padding: 8rem 0;
+    text-align: center;
+}
+
+.why-eyebrow {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    color: rgba(244, 241, 234, 0.7);
+    margin-bottom: 2rem;
+}
+
+.why-hero h1 {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    margin-bottom: 1.5rem;
+    max-width: 800px;
+    margin-inline: auto;
+    line-height: 1.1;
+}
+
+.why-hero p {
+    font-size: 1.25rem;
+    max-width: 700px;
+    margin-inline: auto;
+    opacity: 0.9;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+
+/* 2. Core Value Pillars */
+.why-pillars {
+    padding: 8rem 0;
+    background-color: var(--color-light);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.pillar-card {
+    background-color: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.pillar-icon {
+    color: var(--color-dark);
+    margin-bottom: 1.5rem;
+    background-color: rgba(22, 56, 40, 0.05);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pillar-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pillar-card p {
+    color: var(--color-dark-muted);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+/* 3. Comparison Matrix */
+.competition-matrix {
+    padding: 8rem 0;
+    background-color: var(--color-white);
+}
+
+.competition-matrix h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 800px;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 1.5rem;
+    text-align: left;
+    border-bottom: 1px solid rgba(22, 56, 40, 0.1);
+}
+
+.comparison-table th {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    background-color: var(--color-light);
+}
+
+.comparison-table .highlight-col {
+    background-color: rgba(22, 56, 40, 0.05);
+}
+
+.comparison-table th.highlight-col {
+    background-color: var(--color-dark);
+    color: var(--color-light);
+}
+
+.comparison-table td.highlight-col {
+    font-weight: 700;
+    color: var(--color-dark);
+}
+
+.comparison-table td:first-child,
+.comparison-table th:first-child {
+    font-weight: 700;
+}
+
+/* 4. Science of Mogrosides */
+.mogroside-science {
+    padding: 8rem 0;
+    background-color: var(--color-light);
+}
+
+.mogroside-science .science-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.mogroside-science h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.mogroside-science p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: var(--color-dark-muted);
+    margin-bottom: 2rem;
+}
+
+.key-fact-callout {
+    background-color: var(--color-white);
+    padding: 2rem;
+    border-left: 4px solid var(--color-dark);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    box-shadow: var(--shadow-sm);
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+.key-fact-callout strong {
+    display: block;
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.science-illustration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-card {
+    background-color: var(--color-white);
+    padding: 4rem;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    border: 1px solid rgba(22, 56, 40, 0.1);
+}
+
+.diagram-node {
+    font-family: var(--font-heading);
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+}
+
+.diagram-arrows {
+    font-size: 2rem;
+    color: var(--color-dark-muted);
+    margin-bottom: 1rem;
+}
+
+.diagram-result {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-dark);
+    line-height: 1.5;
+}
+
+/* 5. Audience Section */
+.audience-section {
+    padding: 8rem 0;
+    background-color: var(--color-white);
+}
+
+.audience-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.audience-card {
+    background-color: var(--color-light);
+    border-radius: var(--border-radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.audience-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.audience-info {
+    padding: 2rem;
+}
+
+.audience-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+.audience-info p {
+    color: var(--color-dark-muted);
+    line-height: 1.6;
+}
+
+/* 6. Bottom CTA */
+.why-bottom-cta {
+    padding: 8rem 0;
+    background-color: var(--color-dark);
+    color: var(--color-light);
+    text-align: center;
+}
+
+.why-bottom-cta h2 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+}
+
+.why-bottom-cta p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    margin-bottom: 3rem;
+}
+
+.large-button {
+    padding: 1.25rem 3rem;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 900px) {
+    .pillars-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mogroside-science .science-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .illustration-card {
+        width: 300px;
+        height: 300px;
+        padding: 2rem;
+    }
+}
